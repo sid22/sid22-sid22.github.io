@@ -1,1 +1,0 @@
-window.ws = new WebSlides();

@@ -1,118 +1,229 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Siddharth Goyal</title>
-  <link rel="stylesheet" href="./style.css">
+    <title>
+        Siddharth - Personal Pertfolio website
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#343a41">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#343a41">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#343a41">
 
+    <meta name="keywords" content="META tags, Portfolio, Siddharth, Siddharth Goyal, sid22"/>
+    <style>
+        * {
+            /* box-sizing: inherit; */
+            transition-property: all;
+            transition-duration: 0.6s;
+            transition-timing-function: ease;
+        }
+
+        .btn {
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 45px;
+            margin: 0 0 2em;
+            max-width: 160px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        @media (min-width: 600px) {
+            .btn {
+                margin: 0 1em 2em;
+            }
+
+        }
+
+        .btn:hover {
+            text-decoration: none;
+        }
+
+        .btn-1 svg {
+            height: 55px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn-1 rect {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+            transition: all 0.35s linear;
+        }
+
+        .btn-1:hover {
+            background: rgba(225, 51, 45, 0);
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .btn-1:hover rect {
+            stroke-width: 5;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        body {
+            font-family: 'Baloo Paaji 2', cursive;
+            background-color: #141414;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nIzI5MjkyOScgc3Ryb2tlLXdpZHRoPScwLjA5JyBkPSdNLTIsMUw3LDEwTS0yLDZMNywxNU0tMiwtNEw3LDUnLz4KCQk8L3BhdHRlcm4+CgkJPHBhdHRlcm4gcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgaWQ9J2MyJyB3aWR0aD0nNjAnIGhlaWdodD0nMTIwJyB4PScxMDAlJyB5PScwJyB2aWV3Qm94PScwIDAgNSAxMCc+CgkJCTxwYXRoIGZpbGwtb3BhY2l0eT0nMCcgc3Ryb2tlPScjMjkyOTI5JyBzdHJva2Utd2lkdGg9JzAuMDknIGQ9J003LDFMLTIsMTBNNyw2TC0yLDE1TTcsLTRMLTIsNScvPgoJCTwvcGF0dGVybj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPSc1MCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNjKScvPgoJPHJlY3QgeD0nNTAlJyB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYzIpJy8+Cjwvc3ZnPg==');
+
+            margin: 0;
+            padding: 10px;
+            overflow-x: hidden;
+            height: 100%;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 1.45;
+            color: #eee;
+            color: rgba(255, 255, 255, .85);
+
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* unvisited link */
+        a:link {
+            color: white;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #40C92D;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: green;
+        }
+    </style>
 </head>
+<!-- #FFF6E9 -->
+<!-- style="background-color: #A9A9A9;" -->
+
 <body>
-<!-- partial:index.partial.html -->
-<main role="main">
-    <article id="webslides" class="horizontal">
-      <!-- Slide 1 -->
-      <section>
-        
-        <div class="wrap">
-          <h1><strong>Hello!</strong></h1>
-          <p class="text-intro">
-            I am Siddharth<br>
-            A software developer
-          </p>
-          <p>
-            <a href="https://drive.google.com/file/d/0B0cZcMPp1doIUThMVjBIZk5vTFk/view?usp=sharing" class="button zoomIn">
-              Download My Resume
-            </a>
-          </p>
-        </div>
-      </section>
-      <!-- Slide 2 -->
-      <section>
-        <div class="wrap size-50 aligncenter">
-          <h2><strong>About Me</strong></h2>
-          <!-- <p class="text-intro"></p> -->
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <ul>
-                <h3>A software enginner currently working at <a href="https://innovaccer.com/">Innovaccer</a> as SDE-1</h3>
-                <p>I am passionate about many things from literature, astronomy, geopolitics, economics and computers. To my scholarly acheivements I graduated from LNMIIT with a B.Tech in CSE in 2019. </p>
-                <p>In my current work I have worked on a varity of projects dabbling succesfully/un-sucessfully with a lot of technologies.</p>
-              </ul>
-              <!-- <li>
-                <h2>Learn in a simple way</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa odit vero deserunt, dolorum quam officia rem est labore tenetur.</p>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 3 -->
-      <section>
-        <div class="wrap">
-          <div class="grid vertical-align">
-            <div class="column">
-              <h3><strong>Full Resume Page</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa odit vero deserunt, dolorum quam officia rem est labore tenetur.
-              </p>
+    <div class='container'>
+        <div class="row" style="margin-top: 1.5vw;">
+            <div class="col-md-6">
+                <div style="text-align: left; text-size-adjust: auto;">
+                    <h1>Siddharth Goyal</h1>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-
-      <!-- Slide 4 -->
-      <section>
-        <div class="wrap">
-          <h2>Projects</h2>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2>p1</h2>
-                <img src="https://i.ibb.co/4ZYPHtC/cur1.png" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>p2</h2>
-                <img src="https://i.ibb.co/tMjGkzf/cur2.png" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>p3</h2>
-                <img src="https://i.ibb.co/N6h5CdF/cur3.png" alt="">
-              </div>
-            </li>
-          </ul>
+        <hr />
+        <div style="margin: 10px;">
+            <h3><span class="badge badge-pill badge-dark">About Me</span></h3>
         </div>
-      </section>
+        <div class="row">
+            <div class="col">
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        Hello!<br>
+                        I am software developer at <a
+                        href="https://innovaccer.com/">Innovaccer</a> as SDE-1. I currently live in Noida, India 🇮🇳
+                        As a programmer, I firmly believe in constant improvement as a general technologist and full-stack developer.
+                        I am passionate about Open source and have contributed to OWASP.
 
-      <!-- Slide 6 -->
-      <section>
-        <div class="wrap">
-          <h2><strong>Connect with me</strong></h2>
+                        Other than programming I am very passionate about Astronomy and English Literature.
+                        <!-- <p class="card-text">Hello!  I am software developer currently working at  as SDE-1. I
+                            currently live in Noida, India 🇮🇳 <br>
+                            As a programmer I firmly believe in constant improvment as a general technologist and
+                            fullstack
+                            developer. <br> I am passionate about Open source and have
+                            contributed to OWASP.
+                            <br><br>
+                            Other than programming I am very passionte about Astronomy and English Literature.</p> -->
+                    </div>
+                    <hr>
+                    <a href="https://drive.google.com/file/d/0B0cZcMPp1doIUThMVjBIZk5vTFk/view?usp=sharing"
+                        class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        My Resume
+                    </a>
+                </div>
+            </div>
         </div>
-      </section>
-
-    <!-- Slide 8 -->
-    <section class="slide-bottom">
-      <div class="wrap">
-        <div class="content-right text-serif">
-          <h2><strong>Thank You!</strong></h2>
-          <p>Also a shout out to the creators of WebSlides which made my current website possible :) Follow them on Twitter below</p>
-          <p>
-            <a href="https://twitter.com/jlantunez">@jlantunez</a>,
-						<a href="https://twitter.com/belelros">@belelros</a>, and
-						<a href="https://twitter.com/luissacristan">@luissacristan</a>.
-          </p>
+        <hr />
+        <div style="margin: 10px;">
+            <h3><span class="badge badge-pill badge-dark">Contact Information</span></h3>
         </div>
-      </div>
-    </section>
-    </article>
-  </main>
-<!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/webslides@1.5.0/static/js/webslides.min.js'></script><script  src="./script.js"></script>
 
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text"><a href="mailto:contact@sid22.dev?Subject=Hello!"
+                                target="_top">contact@sid22.dev</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text"><a href="https://www.linkedin.com/in/siddharth22/"><img
+                                    src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/linkedin-512.png"
+                                    style="width: 40px;" /> siddharth22</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Github</h5>
+                        <p class="card-text"><a href="https://github.com/sid22"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
+                                    style="width: 40px;" /> sid22</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" -->
+        <!-- crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" -->
+        <!-- crossorigin="anonymous"></script> -->
 </body>
+
 </html>
