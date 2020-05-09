@@ -1,183 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>
-        Siddharth - Personal Pertfolio website
+      Siddharth - Personal Pertfolio website
     </title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#343a41">
+    <meta name="theme-color" content="#343a41" />
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#343a41">
+    <meta name="msapplication-navbutton-color" content="#343a41" />
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#343a41">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#343a41" />
 
-    <meta name="keywords" content="META tags, Portfolio, Siddharth, Siddharth Goyal, sid22" />
+    <meta
+      name="keywords"
+      content="META tags, Portfolio, Siddharth, Siddharth Goyal, sid22"
+    />
 
     <!-- Primary Meta Tags -->
     <title>Siddharth - Personal Pertfolio website</title>
-    <meta name="title" content="Siddharth - Personal Pertfolio website">
-    <meta name="description" content="I am a software engineer. Visit my page to know more.">
+    <meta name="title" content="Siddharth - Personal Pertfolio website" />
+    <meta
+      name="description"
+      content="I am a software engineer. Visit my page to know more."
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sid22.dev/">
-    <meta property="og:title" content="Siddharth - Personal Pertfolio website">
-    <meta property="og:description" content="I am a software engineer. Visit my page to know more.">
-    <meta property="og:image" content="metaimg.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sid22.dev/" />
+    <meta
+      property="og:title"
+      content="Siddharth - Personal Pertfolio website"
+    />
+    <meta
+      property="og:description"
+      content="I am a software engineer. Visit my page to know more."
+    />
+    <meta property="og:image" content="metaimg.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sid22.dev/">
-    <meta property="twitter:title" content="Siddharth - Personal Pertfolio website">
-    <meta property="twitter:description" content="I am a software engineer. Visit my page to know more.">
-    <meta property="twitter:image" content="metaimg.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sid22.dev/" />
+    <meta
+      property="twitter:title"
+      content="Siddharth - Personal Pertfolio website"
+    />
+    <meta
+      property="twitter:description"
+      content="I am a software engineer. Visit my page to know more."
+    />
+    <meta property="twitter:image" content="metaimg.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-80497355-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-80497355-2");
+    </script>
+
     <style>
-        * {
-            /* box-sizing: inherit; */
-            transition-property: all;
-            transition-duration: 0.6s;
-            transition-timing-function: ease;
-        }
+      * {
+        /* box-sizing: inherit; */
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-timing-function: ease;
+      }
 
+      .btn {
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 45px;
+        margin: 0 0 2em;
+        max-width: 160px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      @media (min-width: 600px) {
         .btn {
-            color: #fff;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 45px;
-            margin: 0 0 2em;
-            max-width: 160px;
-            position: relative;
-            text-decoration: none;
-            text-transform: uppercase;
-            width: 100%;
+          margin: 0 1em 2em;
+        }
+      }
+
+      .btn:hover {
+        text-decoration: none;
+      }
+
+      .btn-1 svg {
+        height: 55px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .btn-1 rect {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-dasharray: 422, 0;
+        transition: all 0.35s linear;
+      }
+
+      .btn-1:hover {
+        background: rgba(225, 51, 45, 0);
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+
+      .btn-1:hover rect {
+        stroke-width: 5;
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      body {
+        font-family: "Baloo Paaji 2", cursive;
+        background-color: #141414;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nIzI5MjkyOScgc3Ryb2tlLXdpZHRoPScwLjA5JyBkPSdNLTIsMUw3LDEwTS0yLDZMNywxNU0tMiwtNEw3LDUnLz4KCQk8L3BhdHRlcm4+CgkJPHBhdHRlcm4gcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgaWQ9J2MyJyB3aWR0aD0nNjAnIGhlaWdodD0nMTIwJyB4PScxMDAlJyB5PScwJyB2aWV3Qm94PScwIDAgNSAxMCc+CgkJCTxwYXRoIGZpbGwtb3BhY2l0eT0nMCcgc3Ryb2tlPScjMjkyOTI5JyBzdHJva2Utd2lkdGg9JzAuMDknIGQ9J003LDFMLTIsMTBNNyw2TC0yLDE1TTcsLTRMLTIsNScvPgoJCTwvcGF0dGVybj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPSc1MCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNjKScvPgoJPHJlY3QgeD0nNTAlJyB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYzIpJy8+Cjwvc3ZnPg==");
+
+        margin: 0;
+        padding: 10px;
+        overflow-x: hidden;
+        height: 100%;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.45;
+        color: #eee;
+        color: rgba(255, 255, 255, 0.85);
+
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
         }
 
-        @media (min-width: 600px) {
-            .btn {
-                margin: 0 1em 2em;
-            }
-
+        100% {
+          opacity: 1;
         }
+      }
 
-        .btn:hover {
-            text-decoration: none;
-        }
+      /* unvisited link */
+      a:link {
+        color: white;
+      }
 
-        .btn-1 svg {
-            height: 55px;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
+      /* visited link */
+      a:visited {
+        color: #40c92d;
+      }
 
-        .btn-1 rect {
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-            stroke-dasharray: 422, 0;
-            transition: all 0.35s linear;
-        }
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
 
-        .btn-1:hover {
-            background: rgba(225, 51, 45, 0);
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-
-        .btn-1:hover rect {
-            stroke-width: 5;
-            stroke-dasharray: 15, 310;
-            stroke-dashoffset: 48;
-            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-        }
-
-        body {
-            font-family: 'Baloo Paaji 2', cursive;
-            background-color: #141414;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nIzI5MjkyOScgc3Ryb2tlLXdpZHRoPScwLjA5JyBkPSdNLTIsMUw3LDEwTS0yLDZMNywxNU0tMiwtNEw3LDUnLz4KCQk8L3BhdHRlcm4+CgkJPHBhdHRlcm4gcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgaWQ9J2MyJyB3aWR0aD0nNjAnIGhlaWdodD0nMTIwJyB4PScxMDAlJyB5PScwJyB2aWV3Qm94PScwIDAgNSAxMCc+CgkJCTxwYXRoIGZpbGwtb3BhY2l0eT0nMCcgc3Ryb2tlPScjMjkyOTI5JyBzdHJva2Utd2lkdGg9JzAuMDknIGQ9J003LDFMLTIsMTBNNyw2TC0yLDE1TTcsLTRMLTIsNScvPgoJCTwvcGF0dGVybj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPSc1MCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNjKScvPgoJPHJlY3QgeD0nNTAlJyB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYzIpJy8+Cjwvc3ZnPg==');
-
-            margin: 0;
-            padding: 10px;
-            overflow-x: hidden;
-            height: 100%;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 1.45;
-            color: #eee;
-            color: rgba(255, 255, 255, .85);
-
-            animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* unvisited link */
-        a:link {
-            color: white;
-        }
-
-        /* visited link */
-        a:visited {
-            color: #40C92D;
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: hotpink;
-        }
-
-        /* selected link */
-        a:active {
-            color: green;
-        }
+      /* selected link */
+      a:active {
+        color: green;
+      }
     </style>
-</head>
-<!-- #FFF6E9 -->
-<!-- style="background-color: #A9A9A9;" -->
+  </head>
+  <!-- #FFF6E9 -->
+  <!-- style="background-color: #A9A9A9;" -->
 
-<body>
-    <div class='container'>
-        <div class="row" style="margin-top: 1.5vw;">
-            <div class="col-md-6">
-                <div style="text-align: left; text-size-adjust: auto;">
-                    <h1>Siddharth Goyal</h1>
-                </div>
-            </div>
+  <body>
+    <div class="container">
+      <div class="row" style="margin-top: 1.5vw;">
+        <div class="col-md-6">
+          <div style="text-align: left; text-size-adjust: auto;">
+            <h1>Siddharth Goyal</h1>
+          </div>
         </div>
-        <hr />
-        <div style="margin: 10px;">
-            <h3><span class="badge badge-pill badge-dark">About Me</span></h3>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card text-white bg-dark">
-                    <div class="card-body">
-                        Hello!<br>
-                        I am software developer at <a href="https://innovaccer.com/">Innovaccer</a> as SDE-1. I
-                        currently live in Noida, India 🇮🇳
-                        As a programmer, I firmly believe in constant improvement as a general technologist and
-                        full-stack developer.
-                        I am passionate about Open source and have contributed to OWASP.
-
-                        Other than programming I am very passionate about Astronomy and English Literature.
-                        <!-- <p class="card-text">Hello!  I am software developer currently working at  as SDE-1. I
+      </div>
+      <hr />
+      <div style="margin: 10px;">
+        <h3><span class="badge badge-pill badge-dark">About Me</span></h3>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <div class="card-body">
+              Hello!<br />
+              I am software developer at
+              <a href="https://innovaccer.com/">Innovaccer</a> as SDE-1. I
+              currently live in Noida, India 🇮🇳 As a programmer, I firmly
+              believe in constant improvement as a general technologist and
+              full-stack developer. I am passionate about Open source and have
+              contributed to OWASP. Other than programming I am very passionate
+              about Astronomy and English Literature.
+              <!-- <p class="card-text">Hello!  I am software developer currently working at  as SDE-1. I
                             currently live in Noida, India 🇮🇳 <br>
                             As a programmer I firmly believe in constant improvment as a general technologist and
                             fullstack
@@ -185,54 +227,70 @@
                             contributed to OWASP.
                             <br><br>
                             Other than programming I am very passionte about Astronomy and English Literature.</p> -->
-                    </div>
-                    <hr>
-                    <a href="https://resume.sid22.dev"
-                        class="btn btn-1">
-                        <svg>
-                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
-                        </svg>
-                        My Resume
-                    </a>
-                </div>
             </div>
+            <hr />
+            <a href="https://resume.sid22.dev" class="btn btn-1">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+              </svg>
+              My Resume
+            </a>
+          </div>
         </div>
-        <hr />
-        <div style="margin: 10px;">
-            <h3><span class="badge badge-pill badge-dark">Contact Information</span></h3>
-        </div>
+      </div>
+      <hr />
+      <div style="margin: 10px;">
+        <h3>
+          <span class="badge badge-pill badge-dark">Contact Information</span>
+        </h3>
+      </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Email</h5>
-                        <p class="card-text"><a href="mailto:contact@sid22.dev?Subject=Hello!"
-                                target="_top">contact@sid22.dev</a></p>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <p class="card-text">
+                <a href="mailto:contact@sid22.dev?Subject=Hello!" target="_top"
+                  >contact@sid22.dev</a
+                >
+              </p>
             </div>
-            <div class="col-md-3 offset-md-1">
-                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
-                    <div class="card-body">
-                        <h5 class="card-title">LinkedIn</h5>
-                        <p class="card-text"><a href="https://www.linkedin.com/in/siddharth22/"><img
-                                    src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/linkedin-512.png"
-                                    style="width: 40px;" /> siddharth22</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 offset-md-1">
-                <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Github</h5>
-                        <p class="card-text"><a href="https://github.com/sid22"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
-                                    style="width: 40px;" /> sid22</a></p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+            <div class="card-body">
+              <h5 class="card-title">LinkedIn</h5>
+              <p class="card-text">
+                <a href="https://www.linkedin.com/in/siddharth22/"
+                  ><img
+                    src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/linkedin-512.png"
+                    style="width: 40px;"
+                  />
+                  siddharth22</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="card text-white bg-dark mb-3" style="min-height: 115px;">
+            <div class="card-body">
+              <h5 class="card-title">Github</h5>
+              <p class="card-text">
+                <a href="https://github.com/sid22"
+                  ><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
+                    style="width: 40px;"
+                  />
+                  sid22</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -244,6 +302,5 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" -->
     <!-- crossorigin="anonymous"></script> -->
-</body>
-
+  </body>
 </html>
